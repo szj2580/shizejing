@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<canvas id="progress" width="600" height="400" style="border:1px solid #000;margin:0 auto;display:block;"></canvas>
+<canvas id="progress1" width="300" height="200" style="border:1px solid #000;margin:0 auto;display:block;"></canvas>
+<script src="progress.js"></script>
+<script>
+	new Progress({
+		cvs:"#progress",
+		color:"skyblue",
+		speed:2,
+		val:0.5
+	})
+	new Progress({
+		cvs:"#progress1",
+		color:"red",
+		speed:5,
+		val:1
+	})
+</script>	
+</body>
+</html>
